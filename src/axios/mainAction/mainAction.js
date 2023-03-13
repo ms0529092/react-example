@@ -1,5 +1,5 @@
 import axios from "axios";
-import { config } from '../config'
+import config from '../config'
 
 const serverPath = config.url()
 
@@ -45,7 +45,7 @@ function Axios(method, url, data = null, config){
             return instance.post(url, data, config)
         break;
         default:
-            console.log(`你媽媽知道你在亂打API嗎?`)
+            console.error(`你媽媽知道你在亂打API嗎?`)
             return false;
     }
 }

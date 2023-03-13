@@ -13,4 +13,4 @@ const config = {
     history:()=> (config.hash ? createHashHistory : createBrowserHistory )
 }
 
-export { config };
+export default config ;

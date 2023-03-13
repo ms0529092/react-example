@@ -140,7 +140,7 @@ const config = (env, argv) => {
         modules:[path.resolve(__dirname, 'src'), 'node_modules'], //解析設定目錄下的模組 
         alias:{
             config:path.resolve(__dirname, './src/config/'),
-            api:path.resolve(__dirname, './src/actions/api.js')   //解析路徑
+            api:path.resolve(__dirname, './src/axios/api')   //解析路徑
         },
         extensions: ['.js', '.css', '.scss', '.json'],  //解析匯入模組格式(import 時可不寫附檔名)
         symlinks:false  //npm link 是否生效
